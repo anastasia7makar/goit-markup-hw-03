@@ -170,6 +170,7 @@ li .ph-number:focus {
 }
 
 .button {
+    border: transparent;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     padding: 10px 32px;
@@ -185,6 +186,8 @@ li .ph-number:focus {
 
 .button:hover,
 .button:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     background-color: var(--blue-for-button-accent);
     cursor: pointer;
 }
