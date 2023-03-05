@@ -82,6 +82,10 @@ ul {
     margin: 0;
 }
 
+.section {
+    padding-bottom: 94px;
+}
+
 .page-links {
     margin-left: 93px;
 }
@@ -190,7 +194,6 @@ li .ph-number:focus {
 
 .feature-list {
     display: flex;
-    margin-bottom: 94px;
 }
 
 .feature-list .item+.item {
@@ -224,7 +227,6 @@ li .ph-number:focus {
 
 .specialisation {
     display: flex;
-    margin-bottom: 94px;
 }
 
 .specialisation .item+.item {
@@ -234,9 +236,8 @@ li .ph-number:focus {
 
 /* Наша команда */
 
-.section {
+.section-team {
     padding-top: 94px;
-    padding-bottom: 94px;
     background-color: var(--white-for-bg);
 }
 
@@ -296,12 +297,12 @@ footer .address {
 }
 
 footer .logo {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 footer .address,
 .footer.e-mail {
-    margin-bottom: 9px;
+    padding-bottom: 9px;
 }
 
 address>.address,
@@ -369,7 +370,6 @@ address>.address,
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .portfolio-item {
@@ -377,7 +377,17 @@ address>.address,
     box-sizing: border-box;
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid var(--border-portfolio-color);
+}
+
+.portfolio-img {
+    display: block;
+}
+
+.portfolio-text {
+    border-top: transparent;
+    border-right: 1px solid var(--border-portfolio-color);
+    border-bottom: 1px solid var(--border-portfolio-color);
+    border-left: 1px solid var(--border-portfolio-color);
 }
 
 .portfolio-list>.portfolio-item:nth-last-child(3n+1) {
@@ -393,10 +403,10 @@ address>.address,
 }
 
 .portfolio-link .title {
-    margin-top: 20px;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 4px;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 4px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -405,9 +415,9 @@ address>.address,
 }
 
 .portfolio-link .text {
-    margin-bottom: 20px;
-    margin-right: 24px;
-    margin-left: 24px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;
