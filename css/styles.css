@@ -39,6 +39,19 @@ ul {
     margin-right: auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 /* Студія */
 
@@ -83,6 +96,7 @@ ul {
 }
 
 .section {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -154,11 +168,13 @@ li .ph-number:focus {
 .hero {
     background-color: var(--black-for-bg);
     text-align: center;
-    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title {
-    margin: 0;
+    max-width: 696px;
+    margin: 0 auto;
     margin-bottom: 30px;
     color: var(--primary-white-color);
     font-weight: 900;
@@ -203,7 +219,12 @@ li .ph-number:focus {
     margin-left: 30px;
 }
 
+.feauters {
+    width: 270px;
+}
+
 .feauters>.title {
+    margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -213,6 +234,10 @@ li .ph-number:focus {
 .feauters>.text {
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+
+.specialisation-section {
+    padding-top: 0px;
 }
 
 .section-title {
@@ -240,7 +265,6 @@ li .ph-number:focus {
 /* Наша команда */
 
 .section-team {
-    padding-top: 94px;
     background-color: var(--white-for-bg);
 }
 
@@ -259,10 +283,6 @@ li .ph-number:focus {
     border-radius: 0px 0px 4px 4px;
 }
 
-.card>.card-img {
-    margin-bottom: 30px;
-}
-
 .card>.card-title,
 .card>.card-text {
     font-size: 16px;
@@ -270,14 +290,15 @@ li .ph-number:focus {
     letter-spacing: 0.03em;
 }
 
-.card>.card-title {
+.card-title {
     margin-bottom: 10px;
     color: var(--title-text-color);
     font-weight: 500;
 }
 
-.card>.card-text {
-    margin-bottom: 30px;
+.card-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
@@ -300,12 +321,12 @@ footer .address {
 }
 
 footer .logo {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 footer .address,
 .footer.e-mail {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
 address>.address,
@@ -328,8 +349,11 @@ address>.address,
 
 /* Портфоліо */
 
-.header-portfolio {
+.header {
     border-bottom: 1px solid var(--border-header-color);
+}
+
+.header.porfolio {
     margin-bottom: 94px;
 }
 
@@ -382,12 +406,12 @@ address>.address,
     margin-bottom: 30px;
 }
 
-.portfolio-img {
+.img {
     display: block;
 }
 
 .portfolio-text {
-    border-top: transparent;
+    padding: 20px 24px;
     border-right: 1px solid var(--border-portfolio-color);
     border-bottom: 1px solid var(--border-portfolio-color);
     border-left: 1px solid var(--border-portfolio-color);
@@ -406,10 +430,7 @@ address>.address,
 }
 
 .portfolio-link .title {
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -418,9 +439,6 @@ address>.address,
 }
 
 .portfolio-link .text {
-    padding-bottom: 20px;
-    padding-right: 24px;
-    padding-left: 24px;
     color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.9;

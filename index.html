@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="container header-nav">
             <nav class="page-nav">
                 <!--Лого-->
@@ -40,13 +40,16 @@
     <main>
         <!--Хіро-->
         <section class="hero">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button primary">Замовити послугу</button>
+            <div class="container">
+                <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+                <button type="button" class="button primary">Замовити послугу</button>
+            </div>
+
         </section>
         <!--Особливості-->
         <section class="feature-section section">
             <div class="container">
-                <h2 class="feature-title">Особливості</h2>
+                <h2 class="feature-title visually-hidden">Особливості</h2>
                 <ul class="feature-list list">
                     <li class="feauters item">
                         <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -77,9 +80,9 @@
             <div class="container">
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <ul class="list specialisation">
-                    <li class="item"><img src=" ./images/box-image-1.jpg" alt="програмування" width="370" height="294" /></li>
-                    <li class="item"><img src="./images/box-image-2.jpg" alt="тестування" width="370" height="294" /></li>
-                    <li class="item"><img src="./images/box-image-3.jpg" alt="дизайн" width="370" height="294" /></li>
+                    <li class="item"><img class="img" src=" ./images/box-image-1.jpg" alt="програмування" width="370" height="294" /></li>
+                    <li class="item"><img class="img" src="./images/box-image-2.jpg" alt="тестування" width="370" height="294" /></li>
+                    <li class="item"><img class="img" src="./images/box-image-3.jpg" alt="дизайн" width="370" height="294" /></li>
                 </ul>
             </div>
 
@@ -90,25 +93,33 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="cards list">
                     <li class="card item">
-                        <img class="card-img" src="./images/img-team-1.jpg" alt="учасник команди" width="270" />
-                        <h3 class="card-title">Ігор Дем'яненко</h3>
-                        <p class="card-text">Product Designer</p>
+                        <img class="card-img img" src=" ./images/img-team-1.jpg " alt="учасник команди " width="270 " />
+                        <div class="card-container">
+                            <h3 class="card-title ">Ігор Дем'яненко</h3>
+                            <p class="card-text ">Product Designer</p>
+                        </div>
                     </li>
-                    <li class="card item">
-                        <img class="card-img" src="./images/img-team-2.jpg" alt="учасник команди " width="270" />
-                        <h3 class="card-title">Ольга Рєпіна</h3>
-                        <p class="card-text">Frontend Developer</p>
+                    <li class="card item ">
+                        <img class="card-img img" src="./images/img-team-2.jpg " alt="учасник команди " width="270 " />
+                        <div class="card-container">
+                            <h3 class="card-title ">Ольга Рєпіна</h3>
+                            <p class="card-text ">Frontend Developer</p>
+                        </div>
                     </li>
 
                     <li class="card item">
-                        <img class="card-img" src="./images/img-team-3.jpg" alt="учасник команди" width="270" />
-                        <h3 class="card-title">Микола Тарасов</h3>
-                        <p class="card-text">Marketing</p>
+                        <img class="card-img img" src="./images/img-team-3.jpg " alt="учасник команди " width="270 " />
+                        <div class="card-container">
+                            <h3 class="card-title">Микола Тарасов</h3>
+                            <p class="card-text">Marketing</p>
+                        </div>
                     </li>
-                    <li class="card item">
-                        <img class="card-img" src="./images/img-team-4.jpg" alt="учасник команди" width="270" />
-                        <h3 class="card-title">Михайло Єрмаков</h3>
-                        <p class="card-text">UI Designer</p>
+                    <li class="card item ">
+                        <img class="card-img img" src="./images/img-team-4.jpg " alt="учасник команди " width="270 " />
+                        <div class="card-container">
+                            <h3 class="card-title">Михайло Єрмаков</h3>
+                            <p class="card-text">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -117,14 +128,14 @@
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container ">
             <!-- Футер -->
-            <a href="/ " class="logo footer"><span class="accent ">Web</span>Studio</a>
+            <a href="/ " class="logo footer "><span class="accent ">Web</span>Studio</a>
             <address>
-            <span class="address">м. Київ, пр-т Лесі Українки, 26</span>
-            <ul class="contacts footer list">
-              <li><a href="mailto:info@devstudio.com " class="e-mail footer">info@devstudio.com</a></li>
-              <li><a href="tel:+380961111111 " class="ph-number footer">+(380) 96 111 11 11</a></li>
+            <span class="address ">м. Київ, пр-т Лесі Українки, 26</span>
+            <ul class="contacts footer list ">
+              <li><a href="mailto:info@devstudio.com " class="e-mail footer ">info@devstudio.com</a></li>
+              <li><a href="tel:+380961111111 " class="ph-number footer ">+(380) 96 111 11 11</a></li>
             </ul>
           </address>
         </div>
